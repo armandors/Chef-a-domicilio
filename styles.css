@@ -189,3 +189,7 @@ font-size: 13px;}
 .div-title {
     color: #444;
 }
+
+.card {
+    border: none;
+}
