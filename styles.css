@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #309A41;
+    background: white;
     font-family:'Work Sans', sans-serif;
     font-weight: 400;
     width: 100%;
@@ -22,15 +22,30 @@ h2{
     font-weight: 400;
 }
 
+/* h3 {
+    margin: 0 40px;
+} */
+
 .img-container {
-    background-image: url(./Images/heroimage.jpg);
+    background-image: url(./Images/heroimage3.jpg);
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    color: #444;
+
     /* opacity: 0.5;
     filter: alpha(opacity=50); */
+}
+
+.row {
+    color: #444;
+
+}
+
+.title-pasos{
+color: red;
 }
 
 .inner-container{
@@ -62,6 +77,7 @@ a{
     text-align: center;
     outline: none;
     text-decoration: none;
+    border-radius: 20px;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
@@ -87,7 +103,6 @@ a{
         font-size: 1.4em;
     }
 }
-
 
 .container {
     width: 80%;
@@ -147,10 +162,30 @@ nav a::before {
     position: absolute;
     top: 0;
     width: 0%;
-
     transition: all ease-in-out 250ms;
 }
 
 nav a:hover::before {
     width: 100%;
+}
+
+.row {
+    margin: 30 auto;
+    max-width: 1000px;
+    display: flex;
+}
+.row > div {
+    /* border: 1px dashed red; */
+    flex: 1 1 auto; /* Size of items defined inside items */
+    text-align: center;
+    align-content: space-around;
+    padding: 30px;
+}
+
+p {
+font: none;
+font-size: 13px;}
+
+.div-title {
+    color: #444;
 }
